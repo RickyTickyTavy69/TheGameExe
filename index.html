@@ -21,24 +21,43 @@
     </header>
     <main>
         <section class="game">
-            <img class="rules" src="./assets/img/gameMain.jpg">
+            <section class="main_game">
+                <div class="You display">
+                    <p>You</p>
+                    <p class="choosing_chosen choosingYou"></p>
+                    <p>0</p>
+                </div>
+                <img class="rules" src="./assets/img/gameMain.jpg">
+                <div class="KI display">
+                    <p>KI</p>
+                    <p class="choosing_chosen choosingKI"></p>
+                    <p>0</p>
+                </div>
+            </section>
+            <p class="result">
+
+            </p>
             <p>choose your weapon</p>
             <div class="chooseYourWeapon">
-                <div class="weapon" class="echse">
+                <div class="weapon echse">
                     <img class="weapon_img" src="./assets/img/Echse.png">
-                    <img class="weapon_hover_img" src="assets/img/Echse_hover.png">
+                    <img class="weapon_hover_img echse" src="assets/img/Echse_hover.png">
                 </div>
-                <div class="weapon" class="sezers">
+                <div class="weapon sezers">
                     <img class="weapon_img" src="./assets/img/Sezers.png">
+                    <img class="weapon_hover_img sezers" src="assets/img/Sezers_hover.png">
                 </div>
-                <div class="weapon" class="spock">
+                <div class="weapon spock">
                     <img class="weapon_img" src="./assets/img/Spock.png">
+                    <img class="weapon_hover_img spock" src="assets/img/Spock_hover.png">
                 </div>
-                <div class="weapon" class="stone">
+                <div class="weapon stone">
                     <img class="weapon_img" src="./assets/img/Stone.png">
+                    <img class="weapon_hover_img stone" src="assets/img/Stone_hover.png">
                 </div>
-                <div class="weapon" class="paper">
+                <div class="weapon paper">
                     <img class="weapon_img" src="./assets/img/paper.png">
+                    <img class="weapon_hover_img paper" src="assets/img/paper_hover.png">
                 </div>
             </div>
         </section>
@@ -46,6 +65,6 @@
     <footer>
         Choose Your Weapon || All rights reserved
     </footer>
-    <script src="./assets/scripts/script.js"></script>
+    <script type="module" src="./assets/scripts/script.js"></script>
 </body>
 </html>

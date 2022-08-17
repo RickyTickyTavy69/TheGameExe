@@ -16,13 +16,36 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.game .result {
+  margin: 5vh 0 5vh 0;
+  height: 50px;
+  width: 500px;
+  border: 5px double red;
+  font-size: 1.5em;
+}
+.game .main_game {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.game .main_game .choosing_chosen {
+  color: red;
+  font-size: 2em;
+  height: 50px;
+  width: 200px;
+}
+.game .main_game .display {
+  margin-top: 10vh;
+}
+.game .main_game .display p {
+  margin-bottom: 5vh;
+}
 .game .chooseYourWeapon {
   display: flex;
   justify-content: space-around;
   width: 80%;
 }
 .game .chooseYourWeapon .weapon {
-  border: 1px solid white;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -32,6 +55,7 @@ body {
   width: 70%;
 }
 .game .chooseYourWeapon .weapon .weapon_hover_img {
+  width: 70%;
   display: none;
 }
 .game .rules {
