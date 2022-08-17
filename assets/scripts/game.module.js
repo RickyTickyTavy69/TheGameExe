@@ -3,25 +3,25 @@ class Game{
     constructor(options) {
         this.winner = 0;
         this.rulesObject = {
-            "echse": {
+            "lizard": {
                 won : ["spock", "paper"],
                 loose: ["sezers", "stone"]
             },
             "sezers": {
-                won : ["echse", "paper"],
+                won : ["lizard", "paper"],
                 loose: ["spock", "stone"]
             },
             "spock": {
                 won : ["sezers", "stone"],
-                loose: ["echse", "paper"]
+                loose: ["lizard", "paper"]
             },
             "stone": {
-                won : ["sezers", "echse"],
+                won : ["sezers", "lizard"],
                 loose: ["paper", "spock"]
             },
             "paper": {
                 won : ["stone", "spock"],
-                loose: ["sezers", "echse"]
+                loose: ["sezers", "lizard"]
             }
         }
     }
@@ -31,7 +31,7 @@ class Game{
         let KIChoosen;
         switch(num){
             case 1:
-                KIChoosen = "echse";
+                KIChoosen = "lizard";
                 break;
             case 2:
                 KIChoosen = "sezers";

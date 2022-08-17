@@ -59,25 +59,25 @@ roundsButton.addEventListener("click", () => {
             choosingYou.innerHTML = `${choosenWeapon}!!`
             const choosenKIWeapon = Game.getKIChoosen();
             console.log("KI choosen", choosenKIWeapon);
-            choosingKI.innerHTML = `KI hat ${choosenKIWeapon}`;
+            choosingKI.innerHTML = `The machine has ${choosenKIWeapon}`;
             const winnerNumber = yourGame.getWinner(choosenKIWeapon, choosenWeapon);
             console.log("winner", winnerNumber);
             if(winnerNumber === 0){
                 roudsDisplay.innerHTML = (Number(roudsDisplay.innerHTML) - 1).toString();
                 rounds = rounds - 1;
                 result.style.color = "orange";
-                result.innerHTML = `${choosenKIWeapon} gegen ${choosenWeapon} => unentschieden!`
+                result.innerHTML = `${choosenKIWeapon} vs ${choosenWeapon} => it is a draw!`
             } else if (winnerNumber === 1){
                 roudsDisplay.innerHTML = (Number(roudsDisplay.innerHTML) - 1).toString();
                 rounds = rounds - 1;
                 result.style.color = "green";
-                result.innerHTML = `${choosenWeapon} gegen ${choosenKIWeapon} => du gewinnst!`
+                result.innerHTML = `${choosenWeapon} vs ${choosenKIWeapon} => you have won!`
                 YourCount.innerHTML = (Number(YourCount.innerHTML) + 1).toString();
             } else if (winnerNumber === 2) {
                 roudsDisplay.innerHTML = (Number(roudsDisplay.innerHTML) - 1).toString();
                 rounds = rounds - 1;
                 result.style.color = "red";
-                result.innerHTML = `${choosenKIWeapon} gegen ${choosenWeapon} => du verlierst ha ha ha!`
+                result.innerHTML = `${choosenKIWeapon} vs ${choosenWeapon} => you have lost you looser ha ha ha!`
                 KICount.innerHTML = (Number(KICount.innerHTML) + 1).toString();
             }
             console.log("rounds", rounds);
@@ -90,13 +90,13 @@ roundsButton.addEventListener("click", () => {
                 let modalHTML = "";
                 console.log(KIWins, YourWins);
                 if(KIWins === YourWins){
-                    modalHTML = "es ist unentschieden...";
+                    modalHTML = "It is a draw";
                 } else if (KIWins > YourWins) {
-                    modalHTML = "Maschinen haben gesiegt!";
+                    modalHTML = "The machines have won!";
                 } else if (KIWins < YourWins){
-                    modalHTML = "Du hast gewonnen!";
+                    modalHTML = "You have won!";
                 }
-                modalWindow.children[0].innerHTML = `Das Spiel ist aus! ${modalHTML}`
+                modalWindow.children[0].innerHTML = `The game is over! ${modalHTML}`
                 rounds = 1;
                 roudsDisplay.innerHTML = "1";
                 YourCount.innerHTML = "0";
