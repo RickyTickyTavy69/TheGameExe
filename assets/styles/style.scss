@@ -1,0 +1,49 @@
+$bg: #121212;
+$font: white;
+$err: red;
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*****************************************************************************/
+
+body{
+  background-color: $bg;
+  color: $font;
+}
+
+
+/*********************************************GAME***************************************/
+
+
+.game{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .chooseYourWeapon{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    .weapon{
+      border: 1px solid white;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      padding: 2vh 0 2vh 0;
+      .weapon_img{
+        width: 70%;
+      }
+      .weapon_hover_img{
+        display: none;
+      }
+    }
+
+  }
+  .rules{
+    width: 30%;
+  }
+}
