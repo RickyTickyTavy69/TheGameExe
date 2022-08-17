@@ -21,23 +21,33 @@
     </header>
     <main>
         <section class="game">
+            <div class="rounds_set">
+                <div class="setRounds">
+                    <label for="rounds">wie viele Runden?</label>
+                    <input class="rounds_input" id="rounds" type="number" min="1" value="1"  placeholder="wie viel Runden">
+                    <button class="countRounds">los geht's</button>
+                </div>
+                <div class="rounds_display">
+                    <p>noch verbleiben <span class="rounds_display_number"> 1 </span> Runden </p>
+                </div>
+            </div>
             <section class="main_game">
                 <div class="You display">
                     <p>You</p>
                     <p class="choosing_chosen choosingYou"></p>
-                    <p>0</p>
+                    <p class="count yourCount">0</p>
                 </div>
                 <img class="rules" src="./assets/img/gameMain.jpg">
                 <div class="KI display">
                     <p>KI</p>
                     <p class="choosing_chosen choosingKI"></p>
-                    <p>0</p>
+                    <p class="count kiCount">0</p>
                 </div>
             </section>
             <p class="result">
-
+                ....
             </p>
-            <p>choose your weapon</p>
+            <p class="game_title">choose your weapon!</p>
             <div class="chooseYourWeapon">
                 <div class="weapon echse">
                     <img class="weapon_img" src="./assets/img/Echse.png">
@@ -65,6 +75,13 @@
     <footer>
         Choose Your Weapon || All rights reserved
     </footer>
+    <section class="modal_window">
+        <p class="modal_window_display">Das Spiel ist vorbei, du hast gewonnen</p>
+        <div class="buttons">
+            <button class="remove_active">ja</button>
+            <button class="remove_active2">okay</button>
+        </div>
+    </section>
     <script type="module" src="./assets/scripts/script.js"></script>
 </body>
 </html>

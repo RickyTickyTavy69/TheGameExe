@@ -27,7 +27,7 @@ class Game{
     }
 
     static getKIChoosen = () => {
-        let num = Math.round(Math.random() * (6 - 1) + 1);
+        let num = Math.round(Math.random() * (5 - 1) + 1);
         let KIChoosen;
         switch(num){
             case 1:

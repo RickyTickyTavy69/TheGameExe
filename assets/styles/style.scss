@@ -14,6 +14,7 @@ $err: red;
 body{
   background-color: $bg;
   color: $font;
+  font-size: 1em;
 }
 
 
@@ -27,14 +28,20 @@ body{
     width: 500px;
     border: 5px double red;
     font-size: 1.5em;
+    text-align: center;
+  }
+  .game_title{
+    font-size: 1.5em;
   }
   .main_game{
+    p{
+      font-size: 1.5em;
+    }
     display: flex;
     justify-content: space-around;
     width: 100%;
     .choosing_chosen{
       color: red;
-      font-size: 2em;
       height: 50px;
       width: 200px;
     }
@@ -43,6 +50,9 @@ body{
       p{
         margin-bottom: 5vh;
       }
+    }
+    .count{
+      color: green;
     }
   }
   display: flex;
@@ -69,5 +79,78 @@ body{
   }
   .rules{
     width: 30%;
+  }
+}
+
+/*********************************************ROUNDS***********************************************************/
+
+.rounds_set{
+  .setRounds{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    label{
+      font-size: 1.4em;
+    }
+    .rounds_input{
+      font-size: 1.4em;
+    }
+    button{
+      background-color: green;
+      border: 2px solid white;
+      padding: 2%;
+      cursor: pointer;
+      transition: 0.3s;
+      font-weight: 600;
+      font-size: 0.9em;
+      &:hover{
+        background-color: #8ef129;
+        transition: 0.3s;
+      }
+    }
+  }
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin-bottom: 4vh;
+  .rounds_display{
+    font-size: 1.5em;
+  }
+}
+
+/*******************************************MODAL_WINDOW********************************************************/
+
+.modal_window{
+  display: none;
+  .buttons{
+    display: flex;
+    justify-content: space-around;
+    button{
+      background-color: green;
+      padding: 2% 4% 2% 4%;
+      font-size: 1em;
+      cursor: pointer;
+      transition: 0.3s;
+      &:hover{
+        background-color: #aeb91b;
+        transition: 0.3s;
+      }
+    }
+  }
+}
+
+.modal_window.active{
+  font-size: 1.8em;
+  display: block;
+  position: absolute;
+  background-color: white;
+  color: black;
+  height: 30vh;
+  width: 30vw;
+  top: 30vh;
+  left: 35vw;
+  text-align: center;
+  .modal_window_display{
+    margin: 5vh 0 7vh 0;
   }
 }
