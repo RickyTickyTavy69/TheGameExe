@@ -25,6 +25,7 @@ roundsButton.addEventListener("click", () => {
     console.log("rounds", roundsInput.value);
     rounds = Number(roundsInput.value);
     roudsDisplay.innerHTML = rounds.toString();
+    roundsInput.value = 1;
 })
 
 /**************************************HOVER_WEAPONS**********************************************/
@@ -98,6 +99,8 @@ roundsButton.addEventListener("click", () => {
                 modalWindow.children[0].innerHTML = `Das Spiel ist aus! ${modalHTML}`
                 rounds = 1;
                 roudsDisplay.innerHTML = "1";
+                YourCount.innerHTML = "0";
+                KICount.innerHTML = "0";
             }
             /******************************************************modal_window*************************/
         })

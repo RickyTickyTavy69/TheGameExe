@@ -34,7 +34,7 @@ body {
   width: 100%;
 }
 .game .main_game p {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 .game .main_game .choosing_chosen {
   color: red;
