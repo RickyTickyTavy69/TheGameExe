@@ -1,4 +1,8 @@
-
+/*
+* the code is
+* documentation
+* enough
+*/
 import Game from "./game.module.js";
 
 
