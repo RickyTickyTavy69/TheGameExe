@@ -1,3 +1,8 @@
+/*
+* the code is
+* documentation
+* enough
+*/
 class Game{
 
     constructor(options) {

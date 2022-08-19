@@ -5,8 +5,6 @@
 */
 import Game from "./game.module.js";
 
-
-
 const chooseYourWeapon = document.querySelector(".chooseYourWeapon");
 const choosingYou = document.querySelector(".choosingYou");
 const choosingKI = document.querySelector(".choosingKI");
